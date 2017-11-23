@@ -112,3 +112,5 @@ function bbloomer_display_acf_field_under_images() {
 add_filter( 'woocommerce_product_tabs', 'sb_woo_remove_reviews_tab', 98);
 function sb_woo_remove_reviews_tab($tabs) { unset($tabs['reviews']);
 return $tabs;}
+
+add_filter( 'storefront_loop_columns', function() { return 4; } ); //change shop colunns//
